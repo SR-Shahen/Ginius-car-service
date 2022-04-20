@@ -1,11 +1,16 @@
 
 import './App.css';
-import Header from './Componant/Header/Header';
+
 import { Route, Routes } from 'react-router-dom';
-import Home from './Componant/Home/Home';
-import Product from './Componant/Product/Product';
-import Login from './Componant/Login/Login';
+
+
 import SignUp from './Componant/SignUp/SignUp';
+import Product from './Componant/Pages/Product/Product';
+import Home from './Componant/Pages/Home/Home';
+import Header from './Componant/Shared/Header/Header';
+import Login from './Componant/Login/Login';
+
+
 
 function App() {
   return (
@@ -13,7 +18,7 @@ function App() {
       <Header></Header>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
-        <Route path='/product' element={<Product></Product>}></Route>
+        <Route path='/product' element={<Product></Product>} />
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/signup' element={<SignUp></SignUp>}></Route>
       </Routes>

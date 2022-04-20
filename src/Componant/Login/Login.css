@@ -1,0 +1,43 @@
+.form-container input {
+    width: 300px;
+    height: 40px;
+}
+
+.label-title {
+    display: block;
+}
+
+.form-container .submit-btn {
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(218, 177, 100);
+    font-size: 20px;
+}
+
+.submit-btn:hover {
+    width: 150px;
+    height: 30px;
+    background-color: orange;
+    color: white;
+    font-size: 20px;
+}
+
+.provider-sign {
+    width: 150px;
+    height: 40px;
+    margin: 20px;
+    background-color: rgb(218, 176, 100);
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+}
+
+.provider-sign:hover {
+
+    background-color: blueviolet;
+    font-size: 17px;
+    color: white;
+    cursor: pointer;
+}

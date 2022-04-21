@@ -1,12 +1,10 @@
 import React from 'react';
-import Helmet from 'react-helmet';
+import PageTitle from '../../Shared/Header/PageTitle/PageTitle';
 
 const Home = () => {
     return (
         <div>
-            <Helmet>
-                <title>Home-Genius Car Service</title>
-            </Helmet>
+            <PageTitle title={"Home"}></PageTitle>
             <h4>This is home welcome to home</h4>
         </div>
     );

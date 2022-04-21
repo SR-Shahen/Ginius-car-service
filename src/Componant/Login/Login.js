@@ -2,6 +2,7 @@ import { getAuth, GithubAuthProvider, GoogleAuthProvider, sendEmailVerification,
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import app from '../../firebase.init';
+import PageTitle from '../Shared/Header/PageTitle/PageTitle';
 import './Login.css'
 const auth = getAuth(app)
 const googleProvider = new GoogleAuthProvider();
@@ -74,6 +75,7 @@ const Login = () => {
     }
     return (
         <div>
+            <PageTitle title={"Login"}></PageTitle>
             <h1>Welcome to login page</h1>
             <div className='form-container'>
                 <form onSubmit={handelFromSubmit}>
